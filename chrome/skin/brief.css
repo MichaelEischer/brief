@@ -1,53 +1,7 @@
-* {
-    -moz-appearance: none;
-    height: auto !important;
-    width: auto !important;
-    min-width: 0 !important;
-    max-width: none !important;
-    min-height: 0 !important;
-    max-height: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    font-weight: normal !important;
-    background-color: transparent !important;
-    background: none !important;
-    border: 0 !important;
-    box-shadow: none !important;
-    -moz-border-bottom-colors: none !important;
-    -moz-border-left-colors: none !important;
-    -moz-border-right-colors: none !important;
-    -moz-border-top-colors: none !important;
-}
-
-
-
 page {
     font-family: Arial, Helvetica, sans-serif;
-    background: #ffffff !important;
+    background: #ffffff;
 }
-
-menupopup {
-    background-color: #f2f2f2 !important;
-    border: 1px solid #bdbdbd !important;
-    padding: 10px !important;
-}
-
-menuitem {
-    height: 25px !important;
-    padding: 0 15px !important;
-    font-size: 13px !important;
-    color: #454545 !important;
-}
-
-menuitem:hover {
-    background-color: #e5e5e5 !important;
-}
-
-menuseparator {
-    border-top: 1px solid #bdbdbd !important;
-    margin: 6px 10px 6px !important;
-}
-
 
 spacer[flex] {
     flex-grow: 1;
@@ -55,13 +9,18 @@ spacer[flex] {
 
 
 .brief-button {
+    -moz-appearance: none;
     -moz-box-flex: 0;
     flex: none;
     -moz-user-focus: none;
+    background: none;
+    border: none;
+    margin: 0;
+    min-width: 0;
 }
 
-.brief-button > .button-box {
-    padding: 0 !important;
+.brief-button .button-icon {
+    margin: 0;
 }
 
 .brief-button .button-text {
@@ -73,32 +32,33 @@ spacer[flex] {
 /* =========== Sidebar =========== */
 
 #sidebar {
-    background-color: #f2f2f2 !important;
-    min-width: 200px;
+    background-color: #f2f2f2;
 }
 
 #sidebar-splitter,
 #tag-list-splitter {
-    border-left: 3px solid #f2f2f2 !important;
-    border-right: 1px solid #d6d6d6 !important;
+    -moz-appearance: none;
+    background: none;
+    border-left: 3px solid #f2f2f2;
+    border-right: 1px solid #d6d6d6;
+    min-width: 0;
 }
 
 #sidebar-splitter:hover,
 #tag-list-splitter:hover {
-    border-right-color: #ffb754 !important;
+    border-right-color: #ffb754;
 }
 
 #reveal-sidebar-button {
     list-style-image: url(reveal-sidebar.png);
     -moz-image-region: rect(0px, 12px, 20px, 0px);
-    padding: 0 2px 0 2px !important;
-    border-right: 1px solid #d6d6d6 !important;
-    background: #fcfcfc !important;
+    padding: 0 2px 0 2px;
+    border-right: 1px solid #d6d6d6;
 }
 
 #reveal-sidebar-button:hover {
     -moz-image-region: rect(20px, 12px, 40px, 0px);
-    border-right-color: #ffb754 !important;
+    border-right-color: #ffb754;
 }
 
 
@@ -106,44 +66,47 @@ spacer[flex] {
 /* =========== Sidebar toolbar =========== */
 
 #sidebar-top {
-    border-bottom: 1px solid #d6d6d6 !important;
+    border-bottom: 1px solid #d6d6d6;
 }
 
 .sidebar-button-box {
     -moz-box-flex: 1;
     -moz-box-pack: center;
-    min-width: 5em !important;
+    min-width: 5em;
     overflow: hidden;
 }
 
 .sidebar-button {
-    padding: 10px 9px 6px !important;
+    padding: 10px 9px 6px;
     font-size: 13px;
-    color: #454545 !important;
+    color: #454545;
 }
 .sidebar-button:hover {
-    color: #ff6800 !important;
+    color: #ff6800;
 }
 .sidebar-button .button-icon {
     display: none;
 }
 .sidebar-button .button-text {
-    font-weight: bold !important;
+    font-weight: bold;
 }
 
 
 #options-dropdown-button {
-    -moz-box-pack: center !important;
+    -moz-box-pack: center;
 }
 
 #options-dropdown-button .button-menu-dropmarker {
-    list-style-image: url(icons/dropmarker.png) !important;
-    -moz-image-region: rect(0, 7px, 4px, 0) !important;
-    margin-left: 5px !important;
+    -moz-appearance: none !important;
+    list-style-image: url(icons/dropmarker.png);
+    -moz-image-region: rect(0, 7px, 4px, 0);
+    margin-left: 5px;
+    min-width: 0;
+    width: 7px;
 }
 
 #options-dropdown-button:hover .button-menu-dropmarker {
-    -moz-image-region: rect(4px, 7px, 8px, 0) !important;
+    -moz-image-region: rect(4px, 7px, 8px, 0);
 }
 
 
@@ -153,8 +116,13 @@ spacer[flex] {
 }
 
 #update-progress {
+    -moz-appearance: none;
     -moz-box-flex: 1;
-    height: 4px !important;
+    border: none;
+    height: 4px;
+    margin: 0;
+    min-height: 0;
+    min-width: 0;
     opacity: 0;
     transition: opacity 500ms;
 }
@@ -164,7 +132,8 @@ spacer[flex] {
 }
 
 #update-progress > .progress-bar {
-    background: linear-gradient(to right, #3ede34, #88ff81) !important;
+    -moz-appearance: none;
+    background: linear-gradient(to right, #3ede34, #88ff81);
 }
 
 
@@ -176,8 +145,8 @@ spacer[flex] {
 .tag-list-item[selected="true"],
 richtreefolder[selected="true"] > .folder-title-container,
 richtreeitem[selected="true"] {
-    border-color: #ffc9a6 !important;
-    background-color: #fcd7bd !important;
+    border-color: #ffc9a6;
+    background-color: #fcd7bd;
 }
 
 #view-list > richlistitem:hover:not([selected="true"]),
@@ -185,8 +154,8 @@ richtreeitem[selected="true"] {
 .tag-list-item:hover:not([selected="true"]),
 richtreefolder:not([selected="true"]) > .folder-title-container:hover,
 richtreeitem:hover:not([selected="true"]) {
-    border-color: #e5e5e5 !important;
-    background-color: #e5e5e5 !important;
+    border-color: #e5e5e5;
+    background-color: #e5e5e5;
 }
 
 richtreeitem:not(.unread) > .unread-count,
@@ -201,20 +170,22 @@ richtreefolder[open="true"] > .folder-title-container > .unread-count,
 /* =========== View list richlistbox =========== */
 
 #view-list {
-    margin: 7px 0 0 5px !important;
+    -moz-appearance: none;
+    background-color: transparent;
+    margin: 7px 0 0 5px;
 }
 
 #view-list > richlistitem {
-    padding: 3px 1px 2px 20px !important;
-    border: 1px solid transparent !important; /* Placeholder for selection border */
-    -moz-box-align: center !important;
+    padding: 3px 1px 2px 20px;
+    border: 1px solid transparent; /* Placeholder for selection border */
+    -moz-box-align: center;
 }
 
 #view-list > richlistitem > .view-title {
-    margin: 0 4px 0 0 !important;
-    font-size: 13px !important;
-    font-weight: bold !important;
-    color: #454545 !important;
+    margin: 0 4px 0 0;
+    font-size: 13px;
+    font-weight: bold;
+    color: #454545;
 }
 
 #view-list > richlistitem:not(.unread) > .unread-count {
@@ -226,17 +197,20 @@ richtreefolder[open="true"] > .folder-title-container > .unread-count,
 /* =========== Tag listbox =========== */
 
 #tag-list {
-    background-color: #f2f2f2 !important;
-    min-width: 100px !important;
+    -moz-appearance: none;
+    background-color: #f2f2f2;
+    min-width: 100px;
+    border: 0;
+    margin: 0;
 }
 
 .tag-list-item {
-    width: 150px !important;
-    padding: 2px 1px 2px 5px !important;
-    border: 1px solid transparent !important; /* Placeholder for selection border */
-    font-size: 13px !important;
-    color: #454545 !important;
-    border-radius: 0 !important;
+    width: 150px;
+    padding: 2px 1px 2px 5px;
+    border: 1px solid transparent; /* Placeholder for selection border */
+    font-size: 13px;
+    color: #454545;
+    border-radius: 0;
     list-style-image: url(chrome://brief/skin/icons/tag.png);
 }
 
