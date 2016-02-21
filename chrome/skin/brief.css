@@ -133,7 +133,7 @@ spacer[flex] {
 
 #update-progress > .progress-bar {
     -moz-appearance: none;
-    background: linear-gradient(to right, #3ede34, #88ff81);
+    background: #ff6800;
 }
 
 
