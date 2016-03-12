@@ -58,66 +58,66 @@
              live in the main window because otherwise it's impossible to remove
              the hardcoded shadow. -->
         <menupopup id="brief-options-panel"
-                   class="brief-panel"
+                   class="cui-widget-panel cui-widget-panelview brief-panel"
                    orient="vertical"
                    consumeoutsideclicks="true">
             <menuitem id="brief-shortcuts-menuitem"
-                      class="brief-panel-menuitem"
+                      class="subviewbutton"
                       label="&briefShowShortcutsMenuitem.label;"
                       oncommand="if (Brief.win) Brief.win.Commands.displayShortcuts()"/>
-            <menuseparator class="brief-panel-menuseparator"/>
+            <menuseparator />
             <menuitem id="brief-import-menuitem"
-                      class="brief-panel-menuitem"
+                      class="subviewbutton"
                       label="&briefImportMenuitem.label;"
                       oncommand="Brief.OPML.importFile()"/>
             <menuitem id="brief-export-menuitem"
-                      class="brief-panel-menuitem"
+                      class="subviewbutton"
                       label="&briefExportMenuitem.label;"
                       oncommand="Brief.OPML.exportFeeds()"/>
-            <menuseparator class="brief-panel-menuseparator"/>
+            <menuseparator />
             <menuitem id="brief-options-menuitem"
-                      class="brief-panel-menuitem"
+                      class="subviewbutton"
                       label="&briefOpenOptionsMenuitem.label;"
                       oncommand="if (Brief.win) Brief.win.Commands.openOptions()"/>
         </menupopup>
         <menupopup id="brief-feed-settings-panel"
-                   class="brief-panel"
+                   class="cui-widget-panel cui-widget-panelview brief-panel"
                    orient="vertical"
                    consumeoutsideclicks="true">
             <menuitem id="brief-update-feed-menuitem"
-                      class="brief-panel-menuitem"
+                      class="subviewbutton"
                       label="&briefRefreshFeed.label;"
                       oncommand="Brief.win.Commands.updateFeed()"/>
             <menuitem id="brief-open-website"
-                      class="brief-panel-menuitem"
+                      class="subviewbutton"
                       label="&briefOpenWebsite.label;"
                       oncommand="Brief.win.Commands.openFeedWebsite()"/>
-            <menuseparator class="brief-panel-menuseparator"/>
+            <menuseparator />
             <menuitem id="brief-empty-feed-menuitem"
-                      class="brief-panel-menuitem"
+                      class="subviewbutton"
                       label="&briefEmptyFeed.label;"
                       oncommand="Brief.win.Commands.emptyFeed()"/>
             <menuitem id="brief-unsubscribe-feed-menuitem"
-                      class="brief-panel-menuitem"
+                      class="subviewbutton"
                       label="&briefUnsubscribeFeed.label;"
                       oncommand="Brief.win.Commands.deleteFeed()"/>
-            <menuseparator class="brief-panel-menuseparator"/>
+            <menuseparator />
             <menuitem id="brief-feed-settings-menuitem"
-                      class="brief-panel-menuitem"
+                      class="subviewbutton"
                       label="&briefFeedSettings.label;"
                       oncommand="Brief.win.Commands.showFeedProperties()"/>
         </menupopup>
         <menupopup id="brief-trash-actions-panel"
-                   class="brief-panel"
+                   class="cui-widget-panel cui-widget-panelview brief-panel"
                    orient="vertical"
                    consumeoutsideclicks="true">
             <menuitem id="brief-restore-trashed-menuitem"
-                      class="brief-panel-menuitem"
+                      class="subviewbutton"
                       label="&briefRestoreTrashed.label;"
                       oncommand="Brief.win.Commands.restoreTrashed()"/>
-            <menuseparator class="brief-panel-menuseparator"/>
+            <menuseparator />
             <menuitem id="brief-empty-trash-menuitem"
-                      class="brief-panel-menuitem"
+                      class="subviewbutton"
                       label="&briefEmptyTrash.label;"
                       oncommand="Brief.win.Commands.emptyTrash()"/>
         </menupopup>

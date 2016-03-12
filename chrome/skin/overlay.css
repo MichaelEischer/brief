@@ -53,46 +53,12 @@ toolbarpaletteitem[place="palette"] > #brief-button {
     border: none;
 }
 
-.brief-panel > .panel-arrowcontainer > .panel-arrowbox .panel-arrow {
-    list-style-image: url(panel-arrow.svg);
+/* stolen from bookmark menu arrow panel */
+.brief-panel .subviewbutton {
+  font: menu;
+  font-weight: normal;
 }
 
-.brief-panel > .panel-arrowcontainer > .panel-arrowcontent {
-    border-radius: 4px;
-    padding: 10px;
-    background: #f2f2f2;
-    background-clip: padding-box;
-    border: 1px solid #bdbdbd;
-    margin: 4px;
-}
-
-.brief-panel-menuitem {
-    -moz-appearance: none;
-    height: 25px;
-    padding: 0 15px;
-    font-size: 13px;
-    color: #454545;
-    background: transparent; /* Necessary to avoid weird brief flashes of the
-                                original background color when hovering rapidly */
-}
-
-.brief-panel-menuitem:hover {
-    background: #e5e5e5;
-}
-
-.brief-panel-menuitem > .menu-accel-container {
-    display: none;
-}
-
-.brief-panel-menuitem > .menu-text {
-    -moz-padding-start: 0px !important;
-    -moz-appearance: none;
-}
-
-.brief-panel-menuseparator {
-    -moz-appearance: none;
-    margin: 6px 10px 6px;
-    padding: 0;
-    border-top: 1px solid #bdbdbd;
-    border-bottom: none;
+.brief-panel .subviewbutton:not([disabled="true"]) {
+  color: inherit;
 }
